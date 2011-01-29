@@ -1,0 +1,11 @@
+application: verbose-scheduling
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /delay
+  script: app.py
+- url: /_ah/.*
+  script: app.py
+  login: admin
